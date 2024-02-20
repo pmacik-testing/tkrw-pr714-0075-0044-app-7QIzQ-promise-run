@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xkpa
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0044-tenant/tkrw-pr714-0075-0044-app/devfile-sample-xkpa@sha256:d1c84dca3dba3bb81476e121e05e7a7b8589f25be5ab8eed75c97ce51a505b8f
+        name: my-nodejs
+        resources: {}
+status: {}
